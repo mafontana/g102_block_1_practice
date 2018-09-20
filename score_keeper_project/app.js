@@ -6,8 +6,16 @@ var p1Display = document.querySelector("#p1Display")
 var p2Display = document.querySelector("#p2Display")
 
 playerOneButton.addEventListener("click", function() {
-    p1score++; 
+    if (p1score<5) {
+    p1score++;
     p1Display.textContent = p1score
+        if (p1score === 5) {
+            p1Display.textContent = p1score
+        }
+    }
+
+
+    
 })
 
 
